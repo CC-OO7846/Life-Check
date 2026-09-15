@@ -1,16 +1,21 @@
 {
-  "name": "Due V15.1 — Life Admin",
+  "name": "Due — Life Admin",
   "short_name": "Due",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#09110F",
   "theme_color": "#09110F",
-  "description": "A calm life-admin tracker for due dates, smart reminders, renewals, and sinking funds.",
   "icons": [
     {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
