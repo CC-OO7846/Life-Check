@@ -1,0 +1,348 @@
+{
+  "app": "Due",
+  "version": 15,
+  "build": "15.1",
+  "tasks": [
+    {
+      "id": "v71",
+      "type": "medication",
+      "title": "Finasteride refill",
+      "category": "health",
+      "dueDate": "2027-02-03",
+      "cost": 319,
+      "saved": 0,
+      "recurrence": "monthly",
+      "reminders": [
+        14,
+        7,
+        3
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "provider": "",
+        "lastDone": "",
+        "code": "",
+        "qty": "",
+        "promoExpiry": ""
+      },
+      "snoozedUntil": null,
+      "legacySavedBalance": 0,
+      "completed": false,
+      "completionAction": "Refilled"
+    },
+    {
+      "id": "v72",
+      "type": "subscription",
+      "title": "Mobile internet",
+      "category": "service",
+      "dueDate": "2026-11-20",
+      "cost": 3000,
+      "saved": 0,
+      "recurrence": "monthly",
+      "reminders": [
+        7,
+        3,
+        1
+      ],
+      "important": true,
+      "notes": "Check the promotion expiry before renewing",
+      "meta": {
+        "promoExpiry": "",
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renewed"
+    },
+    {
+      "id": "v73",
+      "type": "insurance",
+      "title": "Motorcycle Compulsory Insurance",
+      "category": "service",
+      "dueDate": "2027-11-10",
+      "cost": 650,
+      "saved": 0,
+      "recurrence": "yearly",
+      "reminders": [
+        60,
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "policyNo": "",
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renew"
+    },
+    {
+      "id": "v74",
+      "type": "health",
+      "title": "Dental Checkup / Scaling",
+      "category": "health",
+      "dueDate": "2026-12-21",
+      "cost": 1200,
+      "saved": 0,
+      "recurrence": "6months",
+      "reminders": [
+        30,
+        7,
+        1
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "provider": "",
+        "code": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Completed"
+    },
+    {
+      "id": "v75",
+      "type": "home",
+      "title": "Home Air Conditioner Cleaning",
+      "category": "home",
+      "dueDate": "2027-02-28",
+      "cost": 600,
+      "saved": 0,
+      "recurrence": "6months",
+      "reminders": [
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "lastDone": "2026-06-10",
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Serviced"
+    },
+    {
+      "id": "v76",
+      "type": "document",
+      "title": "Car Driving License",
+      "category": "document",
+      "dueDate": "2030-11-20",
+      "cost": 505,
+      "saved": 0,
+      "recurrence": "none",
+      "reminders": [
+        180,
+        90,
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "documentNo": "",
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renew"
+    },
+    {
+      "id": "v77",
+      "type": "document",
+      "title": "Motorcycle Driving License",
+      "category": "document",
+      "dueDate": "2029-11-20",
+      "cost": 255,
+      "saved": 0,
+      "recurrence": "none",
+      "reminders": [
+        180,
+        90,
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renew"
+    },
+    {
+      "id": "v78",
+      "type": "document",
+      "title": "National ID Card",
+      "category": "document",
+      "dueDate": "2028-11-19",
+      "cost": 0,
+      "saved": 0,
+      "recurrence": "none",
+      "reminders": [
+        180,
+        90,
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renew"
+    },
+    {
+      "id": "v79",
+      "type": "career",
+      "title": "Mechanical Engineering License",
+      "category": "career",
+      "dueDate": "2029-08-13",
+      "cost": 500,
+      "saved": 0,
+      "recurrence": "monthly",
+      "reminders": [
+        180,
+        90,
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renew"
+    },
+    {
+      "id": "v710",
+      "type": "health",
+      "title": "Health Insurance",
+      "category": "health",
+      "dueDate": "2027-03-16",
+      "cost": 23837,
+      "saved": 0,
+      "recurrence": "none",
+      "reminders": [
+        7,
+        1
+      ],
+      "important": true,
+      "notes": "Set the date based on the guidance you have received",
+      "meta": {
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "legacySavedBalance": 0,
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Completed"
+    },
+    {
+      "id": "tmvdk4kno4p7p1",
+      "type": "insurance",
+      "title": "Car Compulsory Insurance",
+      "category": "service",
+      "dueDate": "2027-05-28",
+      "cost": 1500,
+      "saved": 0,
+      "legacySavedBalance": 0,
+      "recurrence": "yearly",
+      "reminders": [
+        60,
+        30,
+        7
+      ],
+      "important": true,
+      "notes": "",
+      "meta": {
+        "code": "",
+        "provider": "",
+        "qty": "",
+        "lastDone": "",
+        "promoExpiry": ""
+      },
+      "completed": false,
+      "snoozedUntil": null,
+      "completionAction": "Renew"
+    }
+  ],
+  "history": [
+    {
+      "id": "tmvdjph78je2ag",
+      "taskId": "v71",
+      "title": "Finasteride refill",
+      "type": "medication",
+      "completedAt": "2026-10-18",
+      "actualCost": 320,
+      "nextDueDate": "2026-11-18",
+      "note": "",
+      "completionAction": "Refilled"
+    }
+  ],
+  "contributions": [],
+  "settings": {
+    "lastNotificationDate": "",
+    "push": {
+      "enabled": false,
+      "lastUpdated": "",
+      "lastError": "",
+      "sync": {
+        "lastSuccessful": "",
+        "pending": true,
+        "lastError": "Sync endpoint is not configured",
+        "revision": 12,
+        "deletedTaskIds": []
+      }
+    }
+  }
+}
