@@ -644,10 +644,10 @@ body:before{background-image:linear-gradient(rgba(124,220,177,.022) 1px,transpar
   <div class="eyebrow">GITHUB MASTER DATA</div>
   <h3 style="margin:5px 0 6px">Cross-device updates</h3>
   <p style="margin:0;color:var(--muted);font-size:10px;line-height:1.6">
-    Core task details come from <code>data.js</code>. Edit and push that file to GitHub, then reopen Due on any device to receive the latest master data.
+    All shared Due data comes from <code>due-data.json</code>. Export from Due, replace that file on GitHub, then reopen Due on any device to receive the latest uploaded data.
     Local completion, reserve/history and device settings stay on this device.
   </p>
-  <div style="margin-top:8px;font-size:9px;color:var(--muted)">Master data version: <b id="masterDataVersion">—</b></div>
+  <div style="margin-top:8px;font-size:9px;color:var(--muted)">GitHub data version: <b id="masterDataVersion">—</b></div>
 </div>
 <div class="settings-grid">
    <section class="card"><div class="cardhead"><div><div class="eyebrow">NOTIFICATIONS</div><h3>Notifications</h3></div></div><p class="muted">Browser notificationss work while the app is open. Server push while the app is closed is not enabled yet.</p><div class="settings-row"><div><strong style="font-size:12px">Browser notifications</strong><div id="permissionText" class="muted"></div></div><button id="permissionBtn" class="secondary-btn">Enable</button></div></section>
@@ -736,8 +736,6 @@ body:before{background-image:linear-gradient(rgba(124,220,177,.022) 1px,transpar
 </div>
 
 <template id="emptyTemplate"><div class="empty"><div class="empty-visual"><span>✓</span></div><strong>Nothing here yet</strong><span>Add an item when you are ready.</span></div></template>
-
-<script src="data.js?v=20261019-1"></script>
-<script src="app.js?v=20261019-1"></script>
+<script src="app.js?v=20261019-json1"></script>
 </body>
 </html>

@@ -1,43 +1,25 @@
-# Due — GitHub Master Build
+# Due — GitHub JSON Sync
 
-Upload every file in this ZIP to the root of your GitHub Pages repository.
+Upload all files in this ZIP to the root of your GitHub Pages repository.
 
-## What changes across devices automatically
-Edit `data.js` and push to GitHub:
-- title
-- type/category
-- due date
-- estimated cost
-- recurrence
-- reminder schedule
-- important flag
-- notes / master metadata
+Normal workflow:
+1. Open Due on the computer.
+2. Add/edit/complete items.
+3. Click Export.
+4. Due downloads exactly `due-data.json`.
+5. Replace the existing `due-data.json` in GitHub with the exported one.
+6. Commit.
+7. After GitHub Pages deploys, reopen/refresh Due on the phone.
+8. The phone sees the newer JSON and replaces its older local copy.
 
-On the next online open/reload, desktop and phone load the latest `data.js`.
+The same works in reverse: export on the phone, upload to GitHub, refresh the computer.
 
-## What stays local on each device
-This build intentionally keeps device/user state local:
-- saved/reserve amount
-- completed state
-- history
-- contributions
-- settings
-- items added only from the app UI
+Conflict protection:
+- Every export creates a newer `syncVersion`.
+- GitHub JSON replaces a device only when its `syncVersion` is newer.
+- Local edits made before uploading are not erased merely by refreshing.
+- localStorage is the offline/working copy.
 
-Those fields do not sync between devices without a cloud backend.
+If GitHub is unavailable, the app keeps using its latest local copy.
 
-## Deploy workflow
-1. Edit `data.js`.
-2. Keep each task `id` stable.
-3. Commit and push to GitHub.
-4. Wait for GitHub Pages deployment.
-5. Reopen/refresh Due on the phone.
-
-`data.js`, `app.js`, page navigation and `index.html` are network-first in the service worker, so the phone prefers the newest deployed version.
-
-## Important
-If you change app code, also bump:
-- query version in `index.html`
-- `CACHE` version in `sw.js`
-
-The current build version is `20261019-1`.
+This is GitHub-file sync, not realtime cloud sync.
