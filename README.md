@@ -1,22 +1,43 @@
-# Due App Icon Pack
+# Due — GitHub Master Build
 
-Ready to upload to GitHub / GitHub Pages.
+Upload every file in this ZIP to the root of your GitHub Pages repository.
 
-Files:
-- `icon-512.png` — PWA / Android large icon
-- `icon-192.png` — PWA / Android icon
-- `apple-touch-icon.png` — iPhone / iPad Home Screen
-- `favicon.ico` — browser favicon
-- `favicon-64.png`
-- `favicon-32.png`
-- `favicon-16.png`
-- `manifest.webmanifest` — sample PWA manifest
-- `HEAD-SNIPPET.html` — tags to paste inside `<head>`
+## What changes across devices automatically
+Edit `data.js` and push to GitHub:
+- title
+- type/category
+- due date
+- estimated cost
+- recurrence
+- reminder schedule
+- important flag
+- notes / master metadata
 
-## Recommended placement
+On the next online open/reload, desktop and phone load the latest `data.js`.
 
-Put these files in the same folder as `index.html`.
+## What stays local on each device
+This build intentionally keeps device/user state local:
+- saved/reserve amount
+- completed state
+- history
+- contributions
+- settings
+- items added only from the app UI
 
-Then copy the contents of `HEAD-SNIPPET.html` into the `<head>` section of your page.
+Those fields do not sync between devices without a cloud backend.
 
-If the existing app already has a `manifest.webmanifest`, merge the `icons` section instead of replacing unrelated settings.
+## Deploy workflow
+1. Edit `data.js`.
+2. Keep each task `id` stable.
+3. Commit and push to GitHub.
+4. Wait for GitHub Pages deployment.
+5. Reopen/refresh Due on the phone.
+
+`data.js`, `app.js`, page navigation and `index.html` are network-first in the service worker, so the phone prefers the newest deployed version.
+
+## Important
+If you change app code, also bump:
+- query version in `index.html`
+- `CACHE` version in `sw.js`
+
+The current build version is `20261019-1`.

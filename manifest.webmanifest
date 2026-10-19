@@ -5,6 +5,7 @@
   "display": "standalone",
   "background_color": "#09110F",
   "theme_color": "#09110F",
+  "description": "Personal life-admin app with GitHub-hosted master data.",
   "icons": [
     {
       "src": "icon-192.png",
